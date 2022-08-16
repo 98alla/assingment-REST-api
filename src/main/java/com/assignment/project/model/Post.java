@@ -12,7 +12,7 @@ import java.util.List;
 
 @Entity
 @Data
-@Table(name = "posts", uniqueConstraints = { @UniqueConstraint(columnNames = { "title" }) })
+@Table(name = "posts")
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Post {
 	private static final long serialVersionUID = 1L;

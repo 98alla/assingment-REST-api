@@ -66,4 +66,11 @@ public class PostController {
 		Post post = postService.dislike(id);
 		return new ResponseEntity< >(post, HttpStatus.OK);
 	}
+
+	@GetMapping("/{title}/likes")
+	public ResponseEntity<Post> mostLikes(@PathVariable(name = "title") String title){
+		Post post = postService.mostLiked(title);
+
+		return new ResponseEntity<>(post, HttpStatus.OK);
+	}
 }

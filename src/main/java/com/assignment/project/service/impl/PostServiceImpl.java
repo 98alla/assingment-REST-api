@@ -89,4 +89,10 @@ public class PostServiceImpl implements PostService {
 		return post;
 	}
 
+	@Override
+	public Post mostLiked(String title) {
+		Post post = postRepository.findByTitle(title).get(0);
+		return post;
+	}
+
 }

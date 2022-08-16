@@ -22,4 +22,6 @@ public interface PostService {
     Post like(Long id);
 
 	Post dislike(Long id);
+
+    Post mostLiked(String title);
 }
