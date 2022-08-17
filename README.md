@@ -33,13 +33,16 @@ The app defines following CRUD APIs.
 
 ### Posts
 
-| Method | Url             | Description     | Sample Valid Request Body |
-|--------|-----------------|-----------------|---------------------------|
-| GET    | /api/posts      | Get all posts   |                           |
-| GET    | /api/posts/{id} | Get post by id  |                           |
-| POST   | /api/posts      | Create new post | [JSON](#postcreate)       |
-| PUT    | /api/posts/{id} | Update post     | [JSON](#postupdate)       |
-| DELETE | /api/posts/{id} | Delete post     |                           |
+| Method | Url                      | Description                                 | Sample Valid Request Body |
+|--------|--------------------------|---------------------------------------------|---------------------------|
+| GET    | /api/posts               | Get all posts                               |                           |
+| GET    | /api/posts/{id}          | Get post by id                              |                           |
+| POST   | /api/posts               | Create new post                             | [JSON](#postcreate)       |
+| PUT    | /api/posts/{id}          | Update post                                 | [JSON](#postupdate)       |
+| DELETE | /api/posts/{id}          | Delete post                                 |                           |
+| POST   | /api/posts/{id}/like     | Like post                                   |                           |
+| POST   | /api/posts/{id}/dislike  | Dislike post                                |                           |
+| POST   | /api/posts/{title}/likes | Post with a common title with maximum likes |                           |
 
 ### Comments
 
